@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website of Het Parekh, first year student at Scaler School of Technology.">
+  <title>Het Parekh - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header class="top-bar">
+    <div class="page-width bar-row">
+      <a href="#top" class="my-name">Het Parekh</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- hero section -->
+    <section class="intro" id="top">
+      <div class="page-width intro-row">
+        <div class="intro-left">
+          <h1>Hi, I am Het Parekh</h1>
+          <h3>First year student at Scaler School of Technology</h3>
+          <p>
+            This is my personal portfolio website. Every line of it is HTML and CSS that I
+            typed myself.
+          </p>
+          <a href="#projects" class="button">My projects</a>
+          <a href="#contact" class="button button-2">Contact me</a>
+        </div>
+
+        <img src="images/photo.jpg" alt="Photo of Het Parekh" class="name-circle">
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="part" id="about">
+      <div class="page-width">
+        <h2>About Me</h2>
+
+        <div class="left-right">
+          <div>
+            <p>
+              I am in my first year of college and this was my first coding class. Before
+              this I had never written a single line of HTML.
+            </p>
+            <p>
+              In the beginning my boxes kept moving around and I did not know why. After the
+              box model class it made sense. Every element is a box made of content, padding,
+              border and margin, and after that I could fix my own mistakes.
+            </p>
+            <p>
+              I kept this project to HTML and CSS only because I wanted to understand every
+              line instead of copying code I cannot explain.
+            </p>
+          </div>
+
+          <div class="side-box">
+            <h4>Learning next</h4>
+            <ol>
+              <li>JavaScript</li>
+              <li>How to use an API</li>
+              <li>Git and GitHub properly</li>
+            </ol>
+
+            <h4>Tools I use</h4>
+            <ul>
+              <li>VS Code with Live Server</li>
+              <li>Chrome Inspect Element</li>
+              <li>W3Schools and MDN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="part grey-part" id="skills">
+      <div class="page-width">
+        <h2>My Skills</h2>
+        <p>Only the topics I can write again without looking at my notes.</p>
+
+        <table class="skill-table">
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>What I can do</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Headings, links, lists, tables, forms, semantic tags</td>
+              <td><span class="level-tag">Good</span></td>
+            </tr>
+            <tr>
+              <td>Box model</td>
+              <td>Margin, padding, border, width and height</td>
+              <td><span class="level-tag">Good</span></td>
+            </tr>
+            <tr>
+              <td>Flexbox</td>
+              <td>Navbar and rows of boxes</td>
+              <td><span class="level-tag">Good</span></td>
+            </tr>
+            <tr>
+              <td>CSS Grid</td>
+              <td>Two column and three column layouts</td>
+              <td><span class="level-tag">Good</span></td>
+            </tr>
+            <tr>
+              <td>Media queries</td>
+              <td>Making the page work on a mobile screen</td>
+              <td><span class="level-tag">Good</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- projects section -->
+    <section class="part" id="projects">
+      <div class="page-width">
+        <h2>My Projects</h2>
+        <p>Small things I made while learning in class.</p>
+
+        <div class="card-row">
+
+          <div class="project-card">
+            <h3>Grocery List Page</h3>
+            <p>
+              My first page. I used an unordered list for the shopping items and an ordered
+              list for a recipe, so I learnt when to use which one.
+            </p>
+            <p class="card-tech">HTML lists</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Timetable Page</h3>
+            <p>
+              My college timetable made with a table. This is where I understood thead,
+              tbody, th and td, and how border-collapse joins the lines.
+            </p>
+            <p class="card-tech">HTML tables</p>
+          </div>
+
+          <div class="project-card">
+            <h3>This Portfolio</h3>
+            <p>
+              The page you are on. The navbar uses Flexbox, the about section and these
+              cards use Grid, and one media query makes it all one column on a phone.
+            </p>
+            <p class="card-tech">Flexbox, Grid, Responsive</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="part grey-part" id="contact">
+      <div class="page-width">
+        <h2>Contact Me</h2>
+
+        <div class="left-right">
+          <form class="contact-form" action="#contact" method="get">
+            <label for="fullName">Your Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Rahul Sharma" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="topic">Subject</label>
+            <select id="topic" name="topic" required>
+              <option value="">Select one</option>
+              <option value="project">Project idea</option>
+              <option value="doubt">Doubt from class</option>
+              <option value="feedback">Feedback on my website</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+
+            <button type="submit" class="button">Submit</button>
+          </form>
+
+          <div class="side-box">
+            <h4>My Details</h4>
+            <ul>
+              <li>Email: <a href="mailto:het.26bcs10004@sst.scaler.com">het.26bcs10004@sst.scaler.com</a></li>
+              <li>GitHub: <a href="https://github.com/het1117">github.com/het1117</a></li>
+              <li>College: Scaler School of Technology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="bottom-bar">
+    <div class="page-width">
+      <p>Made by Het Parekh</p>
+    </div>
+  </footer>
+
+</body>
+</html>
